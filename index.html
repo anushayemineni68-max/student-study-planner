@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Student Study Planner</h1>
+    <p>Plan your studies and achieve your goals!</p>
+
+    <h2>My Study Dashboard</h2>
+    <div class="dashboard">
+
+    <div class="card">
+        <h3>Total Tasks</h3>
+        <h2 id="totalTasks">1</h2>
+    </div>
+
+    <div class="card">
+        <h3>Completed Tasks</h3>
+        <h2 id="completedTasks">0</h2>
+    </div>
+
+    <div class="card">
+        <h3>Pending Tasks</h3>
+        <h2 id="pendingTasks">1</h2>
+    </div>
+
+</div>
+
+<h2>Study Progress</h2>
+
+<div class="progress-box">
+    <div class="progress-bar" id="progressBar"></div>
+</div>
+
+<p id="progressText">0% Completed</p>
+
+    <div>
+        <input type="text" id="taskInput" placeholder="Enter your study task">
+        <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <h2>My Tasks</h2>
+    <h2>My Exam Schedule</h2>
+
+<div class="exam-form">
+    <input type="text" id="subjectInput" placeholder="Enter subject name">
+
+    <input type="date" id="examDate">
+
+    <button onclick="addExam()">Add Exam</button>
+</div>
+
+<ul id="examList"></ul>
+    <ul id="taskList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>

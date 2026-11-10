@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3eaff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+h1 {
+    color: #6a35b5;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #555;
+    margin-bottom: 30px;
+    font-size: 17px;
+}
+
+h2 {
+    color: #54258f;
+    margin: 25px;
+}
+
+input {
+    padding: 12px;
+    width: 250px;
+    border: 2px solid #9b70d0;
+    border-radius: 8px;
+    outline: none;
+}
+
+button {
+    padding: 12px 20px;
+    background: #7139b8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4d2185;
+}
+
+ul {
+    list-style: none;
+    margin-top: 20px;
+}
+/* Dashboard Cards */
+
+.dashboard {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 30px auto;
+}
+
+.card {
+    background: white;
+    width: 200px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    color: #7139b8;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    color: #54258f;
+    font-size: 30px;
+    margin: 10px;
+}
+
+/* Progress Bar */
+
+.progress-box {
+    width: 80%;
+    max-width: 500px;
+    height: 20px;
+    background: #ddd;
+    border-radius: 20px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background: #7139b8;
+    border-radius: 20px;
+    transition: width 0.5s;
+}
+
+#progressText {
+    color: #54258f;
+    font-weight: bold;
+    margin: 15px;
+}
